@@ -24,7 +24,7 @@ namespace Lab01_kyrs_3
             string login, str, Password, pas = "";
             Password = textBox2.Text;
             login = textBox1.Text;
-            if (login == "VENYA")
+            if (login == "ILLIA")
             {
                 label3.BackColor = Color.Green;
                 if (Password == "1111")
@@ -37,7 +37,7 @@ namespace Lab01_kyrs_3
                 {
                     count--;
                     pas = "Спробуйте ще раз. " +
-                        "У вас залишилося " + count.ToString() + " попитки";
+                        "У вас залишилося " + count.ToString() + " спроби";
                     if (count == 0)
                     {
                         this.Enabled = false;
@@ -47,7 +47,7 @@ namespace Lab01_kyrs_3
                 }
             }
 
-            if (login != "VENYA")
+            if (login != "ILLIA")
             {
                 str = "Ви хто?";
                 label3.BackColor = Color.Red;
